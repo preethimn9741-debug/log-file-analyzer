@@ -49,13 +49,17 @@ It helps in understanding how logs can be analyzed to detect issues and trends.
 logfile-analyzer/
 │
 ├── log_analyzer.py # Main log analysis script
+
 ├── requirements.txt # Python dependencies
+
 ├── README.md # Project documentation
 │
 ├── logs/
+
 │ └── sample.log # Sample input log file
 │
 └── reports/
+
 └── summary.csv # Generated analysis report
 
 ---
