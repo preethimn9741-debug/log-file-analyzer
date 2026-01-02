@@ -1,6 +1,6 @@
 # Log File Analyzer
 
-## 📌 Project Description
+##  Project Description
 **Log File Analyzer** is a Python-based tool that analyzes application log files to identify errors, warnings, and usage patterns.
 It processes log entries, summarizes activity by log level, and generates structured reports for easy review.
 
@@ -8,17 +8,17 @@ This project is created as a **learning and practice project** to understand log
 
 ---
 
-## 🎯 Purpose of the Project
+## Purpose of the Project
 This project is:
-- ✅ A learning exercise  
-- ✅ A log analysis utility  
-- ❌ Not a production-grade monitoring system  
+- A learning exercise  
+- A log analysis utility  
+- Not a production-grade monitoring system  
 
 It helps in understanding how logs can be analyzed to detect issues and trends.
 
 ---
 
-## ✨ Features
+##  Features
 - Supports analysis of log files (text-based or structured)
 - Identifies and counts log levels (INFO, WARNING, ERROR)
 - Detects frequent or repeated error messages
@@ -27,7 +27,7 @@ It helps in understanding how logs can be analyzed to detect issues and trends.
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 - **Language:** Python  
 - **Libraries:** pandas, re, datetime  
 - **Execution:** Command Line (CLI)  
@@ -36,7 +36,7 @@ It helps in understanding how logs can be analyzed to detect issues and trends.
 
 ---
 
-## 🏗 Architecture Overview
+## Architecture Overview
 - Log files are read line by line
 - Regular expressions are used to parse log entries
 - Log messages are categorized by severity level
@@ -45,7 +45,7 @@ It helps in understanding how logs can be analyzed to detect issues and trends.
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 logfile-analyzer/
 │
@@ -65,7 +65,7 @@ logfile-analyzer/
 
 ---
 
-## ⚙️ Installation Steps
+##  Installation Steps
 
 1. Clone the repository:
 
@@ -84,7 +84,7 @@ cd logfile-analyzer
          2024-01-01 10:00:01 INFO Application started
          2024-01-01 10:05:12 ERROR Database connection failed
          2024-01-01 10:06:45 WARNING Low memory
-Output
+## Output
 
 The analyzer generates a CSV report summarizing log activity.
 
@@ -95,7 +95,7 @@ INFO,1
 ERROR,1
 WARNING,1
 
-🧹 Data Handling
+## Data Handling
 
 Safely handles missing or malformed log lines
 
@@ -103,7 +103,7 @@ Ignores lines that do not match expected format
 
 Produces clean and structured output
 
-🧪 Testing
+## Testing
 
 Automated tests are not currently included.
 
@@ -113,7 +113,7 @@ Add unit tests using pytest
 
 Test different log formats and edge cases
 
-🎨 Code Quality
+ ## Code Quality
 
 Modular and readable code
 
@@ -121,7 +121,7 @@ Easy to extend with new parsing rules
 
 Ready for logging and linting improvements
 
-📌 Conclusion
+## Conclusion
 
 Log File Analyzer is a simple Python project that demonstrates:
 
