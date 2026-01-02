@@ -71,8 +71,8 @@ logfile-analyzer/
 
 1. Clone the repository:
 
-git clone <repository-url>
-cd logfile-analyzer
+   git clone <repository-url>
+   cd logfile-analyzer
 
 2. (Optional) Create a virtual environment:
         python -m venv venv
