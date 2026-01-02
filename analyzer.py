@@ -1,16 +1,14 @@
-import re
+mport re
 import json
 import csv
 from datetime import datetime
 from collections import defaultdict
 import os
 
-# Ensure output folder exists
+
 os.makedirs("output", exist_ok=True)
 
-# --------------------------------
-# Parse plain text log
-# --------------------------------
+
 def parse_text_log(line):
     pattern = r"(\S+ \S+) (\S+) (\S+) (\S+) (.+)"
     match = re.match(pattern, line)
@@ -27,20 +25,17 @@ def parse_text_log(line):
 }
 
 
-# --------------------------------
-# Read all logs (JSON + TEXT)
-# --------------------------------
 def read_logs():
     logs = []
 
-    # Read JSON logs
+    
     with open("logs/app.json") as f:
         json_logs = json.load(f)
         for log in json_logs:
             log["timestamp"] = datetime.fromisoformat(log["timestamp"])
             logs.append(log)
 
-    # Read text logs
+    
     with open("logs/app.log") as f:
         for line in f:
             parsed = parse_text_log(line.strip())
@@ -49,9 +44,7 @@ def read_logs():
 
     return logs
 
-# --------------------------------
-# Filter logs
-# --------------------------------
+
 def filter_logs(logs, service=None, host=None):
     return [
         log for log in logs
@@ -59,9 +52,7 @@ def filter_logs(logs, service=None, host=None):
         and (not host or log["host"] == host)
     ]
 
-# --------------------------------
-# Detect burst errors
-# --------------------------------
+
 def detect_burst_errors(logs):
     error_times = sorted(
         [log["timestamp"] for log in logs if log["level"] == "ERROR"]
@@ -74,9 +65,7 @@ def detect_burst_errors(logs):
 
     return bursts
 
-# --------------------------------
-# Detect long running issues
-# --------------------------------
+
 def detect_long_running_issues(logs):
     error_days = defaultdict(set)
 
@@ -86,9 +75,7 @@ def detect_long_running_issues(logs):
 
     return {msg: days for msg, days in error_days.items() if len(days) > 1}
 
-# --------------------------------
-# Daily summary CSV
-# --------------------------------
+
 def write_daily_summary(logs):
     summary = defaultdict(lambda: defaultdict(int))
 
@@ -103,9 +90,7 @@ def write_daily_summary(logs):
             for level, count in levels.items():
                 writer.writerow([day, level, count])
 
-# --------------------------------
-# Separate CSV per log level
-# --------------------------------
+
 def write_level_csv(logs):
     files = {}
 
@@ -128,9 +113,7 @@ def write_level_csv(logs):
     for f, _ in files.values():
         f.close()
 
-# --------------------------------
-# Main
-# --------------------------------
+
 def main():
     print("PROGRAM STARTED")
 
@@ -153,3 +136,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
