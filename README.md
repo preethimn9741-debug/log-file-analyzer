@@ -54,7 +54,9 @@ logfile-analyzer/
 ├── requirements.txt # Python dependencies
 
 ├── README.md # Project documentation
+
 │
+
 ├── logs/
 
 │ └── sample.log # Sample input log file
