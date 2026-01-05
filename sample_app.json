@@ -1,0 +1,23 @@
+[
+  {
+    "timestamp": "2025-01-01T09:59:00",
+    "level": "INFO",
+    "service": "payment",
+    "host": "host2",
+    "message": "Service started"
+  },
+  {
+    "timestamp": "2025-01-01T10:00:00",
+    "level": "ERROR",
+    "service": "payment",
+    "host": "host2",
+    "message": "Payment failed"
+  },
+  {
+    "timestamp": "2025-01-02T12:00:00",
+    "level": "ERROR",
+    "service": "payment",
+    "host": "host2",
+    "message": "Payment failed"
+  }
+]
