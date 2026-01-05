@@ -86,7 +86,12 @@ logfile-analyzer/
          2024-01-01 10:00:01 INFO Application started
          2024-01-01 10:05:12 ERROR Database connection failed
          2024-01-01 10:06:45 WARNING Low memory
-## Output
+   
+## Screenshots Terminal output
+<img width="1326" height="755" alt="Screenshot 2026-01-05 100404" src="https://github.com/user-attachments/assets/6f3d6e73-7068-42a4-9165-0ab23b78b2a1" />
+
+
+## Output 
 
 The analyzer generates a CSV report summarizing log activity.
 
