@@ -55,8 +55,6 @@ logfile-analyzer/
 
 ├── README.md # Project documentation
 
-│
-
 ├── logs/
 
 │ └── sample.log # Sample input log file
