@@ -87,7 +87,8 @@ logfile-analyzer/
          2024-01-01 10:06:45 WARNING Low memory
    
 ## Screenshots Terminal output
-<img width="1326" height="755" alt="Screenshot 2026-01-05 100404" src="https://github.com/user-attachments/assets/64035292-e322-49f7-b655-50b2206e605c" />
+<img width="1306" height="445" alt="Screenshot 2026-01-06 101210" src="https://github.com/user-attachments/assets/c68bb8c7-910f-433c-8084-7d5f33844d08" />
+
 
 
 ## Output 
