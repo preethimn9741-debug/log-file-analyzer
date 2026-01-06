@@ -49,7 +49,6 @@ It helps in understanding how logs can be analyzed to detect issues and trends.
 
 logfile-analyzer/
 
-
 ├── log_analyzer.py # Main log analysis script
 
 ├── requirements.txt # Python dependencies
@@ -87,9 +86,7 @@ logfile-analyzer/
          2024-01-01 10:06:45 WARNING Low memory
    
 ## Screenshots Terminal output
-<img width="1306" height="445" alt="Screenshot 2026-01-06 101210" src="https://github.com/user-attachments/assets/c68bb8c7-910f-433c-8084-7d5f33844d08" />
-
-
+<img width="1313" height="732" alt="Screenshot 2026-01-06 144229" src="https://github.com/user-attachments/assets/a7eae335-a3f0-4d35-af3a-65b4fb15119d" />
 
 ## Output 
 
